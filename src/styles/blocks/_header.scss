@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: $header-height;
   padding-inline: 50px;
   box-sizing: border-box;
 }
@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 60px;
+    height: $header-height;
 
     font-size: 12px;
     line-height: 14px;
@@ -42,27 +42,25 @@
     color: $color-main;
 
     transition: color 300ms;
+
+    &.is-active {
+      color: $color-accent;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 37px;
+        height: 4px;
+        border-radius: 8px;
+        background-color: $color-accent;
+      }
+    }
   }
 
   &__link:hover {
     color: $color-accent;
-  }
-}
-
-.is-active {
-  color: $color-accent;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 37px;
-    height: 4px;
-    border-radius: 8px;
-    background-color: $color-accent;
   }
 }
