@@ -8,7 +8,7 @@
     background-image: url('../images/star.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: $gap-star;
+    margin-right: $star-gap;
     &:last-child {
       margin-right: 0;
     }
