@@ -12,18 +12,18 @@
 
 @media (min-width: 488px) and (max-width: 767px) {
   .catalog__list {
-    grid-template-columns: repeat(2, card-width);
+    grid-template-columns: repeat(2, $card-width);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .catalog__list {
-    grid-template-columns: repeat(3, card-width);
+    grid-template-columns: repeat(3, $card-width);
   }
 }
 
 @media (min-width: 1024px) {
   .catalog__list {
-    grid-template-columns: repeat(4, card-width);
+    grid-template-columns: repeat(4, $card-width);
   }
 }
