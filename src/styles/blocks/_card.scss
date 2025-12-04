@@ -26,6 +26,7 @@
     line-height: 18px;
     color: $color-main;
     font-family: $font-main;
+    transition: color 300ms;
   }
   &__code {
     margin-top: 4px;
@@ -83,10 +84,24 @@
     border-radius: $button-radius;
     border: none;
     cursor: pointer;
+    transition:
+    background-color 300ms,
+    color 300ms,
+    border-color 300ms;
   }
   &__buy:hover {
     background-color: $color-card-bg;
     color: $color-accent;
     border: 1px solid $color-accent;
   }
+  transform-origin: center;
+  transition: transform 300ms;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover .card__title {
+  color: #34568b;
 }
