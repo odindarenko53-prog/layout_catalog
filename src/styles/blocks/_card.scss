@@ -1,5 +1,6 @@
 .card {
   box-sizing: border-box;
+  overflow: hidden;
   width: $card-width;
   border: 1px solid $color-card-border;
   border-radius: $card-radius;
@@ -94,6 +95,7 @@
     color: $color-accent;
     border: 1px solid $color-accent;
   }
+
   transform-origin: center;
   transition: transform 300ms;
 }
